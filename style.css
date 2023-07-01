@@ -5500,6 +5500,7 @@ h2{
   margin-bottom: 20px;
   border-radius: 6px;
   backdrop-filter: blur(1px);
+  font-family: 'EB Garamond', serif;
 }
 .timeline-content p {
   color: rgb(255, 0, 0);
