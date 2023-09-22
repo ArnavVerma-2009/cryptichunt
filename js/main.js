@@ -359,28 +359,28 @@ mailChimp();
   }
   //end
   
-  const countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+  // const countDown = new Date(birthday).getTime(),
+  //     x = setInterval(function() {    
 
-        const now = new Date().getTime(),
-              distance = countDown - now;
+  //       const now = new Date().getTime(),
+  //             distance = countDown - now;
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+  //       document.getElementById("days").innerText = Math.floor(distance / (day)),
+  //         document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+  //         document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+  //         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
-        if (distance < 0) {
-          document.getElementById("headline").innerText = "THE EVENT HAS BEGUN";
-          document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
-          document.getElementById("boxed-btn-white").style.display = "inline-block"
+  //       //do something later when date is reached
+  //       if (distance < 0) {
+  //         document.getElementById("headline").innerText = "THE EVENT HAS BEGUN";
+  //         document.getElementById("countdown").style.display = "none";
+  //         document.getElementById("content").style.display = "block";
+  //         document.getElementById("boxed-btn-white").style.display = "inline-block"
 
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
+  //         clearInterval(x);
+  //       }
+  //       //seconds
+  //     }, 0)
   }());
 
 
